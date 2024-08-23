@@ -1,0 +1,34 @@
+Code
+
+#La hoja de calclulo va a estar en otra carpeta
+#Aqui se va a desplegar el menu (todas las opciones)
+
+orden = [] #lista que se va a comparar con la hoja de datos para ver el precio
+
+print("Bienvenidos a La Reyna")
+drinksqa = input("Les gustaría ordenar algo para beber? ")
+drinksqacorrect = ["Si", "si", "Sí", "sí", "S", "s", "Y", "y"]
+drink = "Sin bebida"
+food = "Sin comida"
+
+if drinksqa in drinksqacorrect:
+  drink = input("¿Qué bebidas les gustaría ordenar? ")
+  print("Perfecto, su orden es: " + drink)
+ 
+else:
+     print ("Perfecto, su orden sería: Sin bebida")
+
+orden.append(drink)
+foodqa = input("Les gustaría ordenar algo para comer? ")
+foodqacorrect = ["Si", "si", "Sí", "sí", "S", "s"]
+
+if foodqa in foodqacorrect:
+  food = input("¿Qué comida les gustaría ordenar?")
+  print("Perfecto, su orden es: " + food)
+else: 
+  print("Perfecto, su orden sería: Sin comida")
+
+orden.append(food)
+
+print("Su orden es " + drink + " y " + food)
+print(orden)
